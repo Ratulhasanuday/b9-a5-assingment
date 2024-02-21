@@ -1,25 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus Ticket</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        .inter-font{
+          font-family: "Inter", sans-serif;
+        }
         .raleway-font{
             font-family: "Raleway", sans-serif;
         }
     </style>
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="raleway-font">
-    <header>
+<body class="raleway-font ">
+    <header class="mx-32">
+      <!-- navbar  -->
+        <div class="">
+            <div>
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-lg rounded-box w-52">
+                          <li><a>Home</a></li>
+                          <li><a>About</a></li>
+                          <li><a>Destination</a></li>
+                          <li><a>Search</a></li>
+                        </ul>
+                      </div>
+                      <a class="btn btn-ghost text-4xl">P Ticket</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal text-lg px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <button class="btn text-base px-4 rounded-lg border-1 border-green-500 bg-green-50 text-green-500 font-extrabold">Buy <img src="/images/bus-icon.png" alt=""></button>
+                    </div>
+                  </div>
+                  
+            </div>
+        </div>
+        <!-- banner -->
+        <div class="relative text-center col-span-1 lg:col-span-2">
+          <img class="h-[240px] lg:h-[550px]" src="images/banner.png" alt="">
+          <div class="absolute p-3 lg:pt-16  top-0 h-full w-full lg:h-full">
+              <h1 class="text-white text-6xl 
+               font-extrabold">End-to-End Travel with <br><span class="text-green-500  ">P Paribahan</span></h1>
+              <p class="text-white lg:text-lg font-medium pt-1  lg:pt-10">Yes, you can run unit tests and view the results directly within the app. The <br>integrated testing features allow for a streamlined .</p>
+              <button class="btn mt-2 lg:mt-10 font-bold text-lg  border-none text-black bg-[#15c421]"> 
+                Buy Tickets </button>
+          </div>
+      </div>
+      <!-- card start-->
+      <div>
+        <h1 class="text-3xl font-extrabold pt-32 text-center text">Best offers for you </h1>
+        <div>
+          <!-- card start-->
+          <div class="flex gap-5 mt-12">
+            <div class="flex flex-row t card w-[570px] h-[220px] bg-[#FFBF0F] text-primary-content">
+            <div class="card-body inter-font
+            p-12 w-72 text-black">
+              <h2 class="card-title text-4xl font-extrabold">15% OFF</h2>
+              <h5 class="font-semibold"> on your next purchase</h5>
+              <p class="text-[#03071280] font-medium">use by January 2024 </p>
+            </div>
+            <div class="flex flex-col w-12">
+              <div class="h-6  bg-white rounded-b-3xl"></div>
+              <div class="h-44 ">
+                <div class="h-36 border-dotted border-l-2 ml-6 mt-4"></div>
+              </div>
+              <div class="h-6 bg-white rounded-t-3xl"></div>
+            </div>
+            <div>
+              <div class="h-6 w-44 pt-16 pl-3">
+                <h1 class="text-black text-4xl font-bold">NEW15</h1>
+                <h4 class="text-[#03071280] text-lg font-medium">Coupon Code</h4>
+              </div>
+              
+            </div>
+          </div>
+            <div class="flex flex-row t card w-[570px] h-[220px] bg-[#F78C9C] text-primary-content">
+            <div class="card-body inter-font
+            p-12 w-72 text-black">
+              <h2 class="card-title text-4xl font-extrabold">20% OFF</h2>
+              <h5 class="font-semibold"> on your next purchase</h5>
+              <p class="text-[#03071280] font-medium">use by January 2024 </p>
+            </div>
+            <div class="flex flex-col w-12">
+              <div class="h-6  bg-white rounded-b-3xl"></div>
+              <div class="h-44 ">
+                <div class="h-36 border-dotted border-l-2 ml-6 mt-4"></div>
+              </div>
+              <div class="h-6 bg-white rounded-t-3xl"></div>
+            </div>
+            <div>
+              <div class="h-6 w-44 pt-16 pl-3">
+                <h1 class="text-black text-3xl font-bold">Couple 20
+                </h1>
+                <h4 class="text-[#03071280] text-lg font-medium">Coupon Code</h4>
+              </div>
+              
+            </div>
+          </div>
+         
+           
+          </div>
+
+          <div class="text-center mt-20"><button class="btn bg-white border-1 border-green-300 text-green-500 font-extrabold"> See All Offers</button></div>
+        </div>
+      </div>
+
 
     </header>
-    <main>
+    <main class="border-t-2 bg-slate-100 border-emerald-500 rounded-t-3xl">
+      <section class="mx-32">
+      <div class="mt-32">
+        <h1 class="text-5xl text-center font-extrabold">P Paribahan </h1>
+        <p class="text-2xl text-center pt-9">Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
+      </div>
+      <!-- greenline Paribahon -->
 
+      <div class="flex flex-row t card w-full h-[420px] bg-white text-primary-content">
+        <div class="card-body p-8 flex flex-row text-black">
+        <img src="/images/bus-logo.png" class="h-10 w-12" alt="">
+          <div>
+            <h2 class=" text-2xl font-extrabold">Greenline Paribahan</h2>
+            <p>Coach-009-WEB ! AC_Business</p>
+          </div>
+          <div class="mx-0 flex justify-end"><button class="btn bg-[#1DD10026] right-0"><img src="/images/seat-green.png" alt=""><p class="">40 Seats left</p></button></div>
+        </div>
+        <!-- midel point -->
+        <div class="flex flex-col w-20">
+          <div class="h-10  bg-[#F7F8F8] rounded-b-[35px]"></div>
+          <div class="h-[340px] ">
+            <div class="h-[300px] border-dotted border-green-500 border-l-2 ml-10 mt-4"></div>
+          </div>
+          <div class="h-10 bg-[#F7F8F8] rounded-t-[35px]">
+          </div>
+        </div>
+        <div>
+          <!-- ticket price -->
+          <div class="w-44 pt-16 pl-3 flex flex-col justify-center ">
+            <img src="./images/fare.png" class="h-7 w-8" alt="">
+            <h1 class="text-[#030712] text-center text-2xl font-extrabold">550 Taka </h1>
+            <h3 class="text-[#03071299]  text-center text-xl font-bold">Per Seat </h3>
+          </div>
+          
+        </div>
+      </div>
+     
+      <div></div>
+      <div></div>
+      </section>
     </main>
     <footer>
-        
+
     </footer>
     
 </body>
