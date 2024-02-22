@@ -48,7 +48,7 @@
                       </ul>
                     </div>
                     <div class="navbar-end">
-                        <button class="btn text-base px-4 rounded-lg border-1 border-green-500 bg-green-50 text-green-500 font-extrabold">Buy <img src="./images/bus-icon.png" alt=""></button>
+                        <button  class="btn text-base px-4 rounded-lg border-1 border-green-500 bg-green-50 text-green-500 font-extrabold">Buy <img src="./images/bus-icon.png" alt=""></button>
                     </div>
                   </div>
                   
@@ -61,7 +61,7 @@
               <h1 class="text-white text-6xl 
                font-extrabold">End-to-End Travel with <br><span class="text-green-500  ">P Paribahan</span></h1>
               <p class="text-white lg:text-lg font-medium pt-1  lg:pt-10">Yes, you can run unit tests and view the results directly within the app. The <br>integrated testing features allow for a streamlined .</p>
-              <button class="btn mt-2 lg:mt-10 font-bold text-lg  border-none text-black bg-[#15c421]"> 
+              <button onclick="buyButtonClick()" id="buy-tickets" class="btn mt-2 lg:mt-10 font-bold text-lg  border-none text-black bg-[#15c421]"> 
                 Buy Tickets </button>
           </div>
           
@@ -127,7 +127,7 @@
 
 
     </header>
-    <main class="border-t-2 mt-8 bg-slate-100 border-emerald-500 rounded-t-3xl">
+    <main id="main-content" class="border-t-2 mt-8 bg-slate-100 border-emerald-500 rounded-t-3xl">
       <section class="mx-32">
       <div class="mt-32">
         <h1 class="text-5xl text-center font-extrabold">P Paribahan </h1>
@@ -212,44 +212,44 @@
         <!-- bus site -->
         <div class="text-right"><button class="btn w-24 mt-6  bg-[#0307121A] "><img src="/images/steering-wheel.png" alt=""></button></div>
         <!-- bus site position -->
-        <div class="grid grid-cols-4 inter-font">
+        <div id="" class="grid grid-cols-4 inter-font">
           
-          <button id="a1" class="btn mt-6 ml-8">A1</button>
-          <button id="a2" class="btn mt-6 ml-8">A2</button>
-          <button id="a3" class="btn mt-6 ml-8">A3</button>
-          <button id="a4" class="btn mt-6 ml-8">A4</button>
-          <button id="b1" class="btn mt-6 ml-8">B1</button>
-          <button id="b2" class="btn mt-6 ml-8">B2</button>
-          <button id="b3" class="btn mt-6 ml-8">B3</button>
-          <button id="b4" class="btn mt-6 ml-8">B4</button>
-          <button id="c1" class="btn mt-6 ml-8">C1</button>
-          <button id="c2" class="btn mt-6 ml-8">C2</button>
-          <button id="c3" class="btn mt-6 ml-8">C3</button>
-          <button id="c4" class="btn mt-6 ml-8">C4</button>
-          <button id="d1" class="btn mt-6 ml-8">D1</button>
-          <button id="d2" class="btn mt-6 ml-8">D2</button>
-          <button id="d3" class="btn mt-6 ml-8">D3</button>
-          <button id="d4" class="btn mt-6 ml-8">D4</button>
-          <button id="e1" class="btn mt-6 ml-8">E1</button>
-          <button id="e2" class="btn mt-6 ml-8">E2</button>
-          <button id="e3" class="btn mt-6 ml-8">E3</button>
-          <button id="e4" class="btn mt-6 ml-8">E4</button>
-          <button id="f1" class="btn mt-6 ml-8">F1</button>
-          <button id="f2" class="btn mt-6 ml-8">F2</button>
-          <button id="f3" class="btn mt-6 ml-8">F3</button>
-          <button id="f4" class="btn mt-6 ml-8">F4</button>
-          <button id="g1" class="btn mt-6 ml-8">G1</button>
-          <button id="g2" class="btn mt-6 ml-8">G2</button>
-          <button id="g3" class="btn mt-6 ml-8">G3</button>
-          <button id="g4" class="btn mt-6 ml-8">G4</button>
-          <button id="h1" class="btn mt-6 ml-8">H1</button>
-          <button id="h2" class="btn mt-6 ml-8">H2</button>
-          <button id="h3" class="btn mt-6 ml-8">H3</button>
-          <button id="h4" class="btn mt-6 ml-8">H4</button>
-          <button id="j1" class="btn mt-6 ml-8">J1</button>
-          <button id="j2" class="btn mt-6 ml-8">J2</button>
-          <button id="j3" class="btn mt-6 ml-8">J3</button>
-          <button id="j4" class="btn mt-6 ml-8">J4</button>
+          <button id="site" class="btn mt-6 ml-8">A1</button>
+          <button id="site" class="btn mt-6 ml-8">A2</button>
+          <button id="site" class="btn mt-6 ml-8">A3</button>
+          <button id="site" class="btn mt-6 ml-8">A4</button>
+          <button id="site" class="btn mt-6 ml-8">B1</button>
+          <button id="site" class="btn mt-6 ml-8">B2</button>
+          <button id="site" class="btn mt-6 ml-8">B3</button>
+          <button id="site" class="btn mt-6 ml-8">B4</button>
+          <button id="site" class="btn mt-6 ml-8">C1</button>
+          <button id="site" class="btn mt-6 ml-8">C2</button>
+          <button id="site" class="btn mt-6 ml-8">C3</button>
+          <button id="site" class="btn mt-6 ml-8">C4</button>
+          <button id="site" class="btn mt-6 ml-8">D1</button>
+          <button id="site" class="btn mt-6 ml-8">D2</button>
+          <button id="site" class="btn mt-6 ml-8">D3</button>
+          <button id="site" class="btn mt-6 ml-8">D4</button>
+          <button id="site" class="btn mt-6 ml-8">E1</button>
+          <button id="site" class="btn mt-6 ml-8">E2</button>
+          <button id="site" class="btn mt-6 ml-8">E3</button>
+          <button id="site" class="btn mt-6 ml-8">E4</button>
+          <button id="site" class="btn mt-6 ml-8">F1</button>
+          <button id="site" class="btn mt-6 ml-8">F2</button>
+          <button id="site" class="btn mt-6 ml-8">F3</button>
+          <button id="site" class="btn mt-6 ml-8">F4</button>
+          <button id="site" class="btn mt-6 ml-8">G1</button>
+          <button id="site" class="btn mt-6 ml-8">G2</button>
+          <button id="site" class="btn mt-6 ml-8">G3</button>
+          <button id="site" class="btn mt-6 ml-8">G4</button>
+          <button id="site" class="btn mt-6 ml-8">H1</button>
+          <button id="site" class="btn mt-6 ml-8">H2</button>
+          <button id="site" class="btn mt-6 ml-8">H3</button>
+          <button id="site" class="btn mt-6 ml-8">H4</button>
+          <button id="site" class="btn mt-6 ml-8">J1</button>
+          <button id="site" class="btn mt-6 ml-8">J2</button>
+          <button id="site" class="btn mt-6 ml-8">J3</button>
+          <button id="site" class="btn mt-6 ml-8">J4</button>
 
 
         </div>
@@ -262,18 +262,22 @@
           <div class=" border-dashed border"></div>
           <div>
             <div class="bg-[#F7F8F8] h-[335px] w-full rounded-xl p-6 inter-font">
-              <table id="table" class="w-full pl-3 ">
-                <tr>
-                  <th >Seat</th>
-                  <th class="text-center">Class</th>
-                  <th>Price</th>
-                </tr>
+              <table onclick="tab" id="table" class="w-full pl-3 ">
+             <thead>
+              <tr>
+                <th >Seat</th>
+                <th class="text-center">Class</th>
+                <th>Price</th>
+              </tr>
+             </thead>
                 <div class=" border-dashed border"></div>
+              <tbody id="table-body">
                 <tr id="table-row" class="text-center">
-                  <td>c1</td>
-                  <td>Economoy</td>
-                  <td>550</td>
+                  <td></td>
+                  <td></td>
+                  <td class="text-right"></td>
                 </tr>
+              </tbody>
               </table>
               <div class=" border-dashed border"></div>
               <div class="flex justify-between">
@@ -314,6 +318,7 @@
     <footer>
 
     </footer>
-    
+    <script src="/scripts/buy-tickeet.js"></script>
+    <script src="/scripts/table.js"></script>
 </body>
 </html>
